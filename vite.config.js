@@ -41,8 +41,8 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      // This is an example; add any necessary aliases here
-      '@': '/src',
+      'react-icons': 'react-icons/lib',
+
     },
   },
   build: {
