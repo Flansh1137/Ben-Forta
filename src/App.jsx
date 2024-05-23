@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from '../src/assets/components/Navbar/Navbar'
+import Navbar from '../src/components/Navbar/Navbar'
 
-import Home from '../src/assets/components/Homepage/Home';
-import Books from '../src/assets/components/Books/Books';
-import Blog from '../src/assets/components/Blog/Blog';
-import About from '../src/assets/components/About/About';
-import Footer from './assets/components/Footer/Footer';
+import Home from '../src/components/Homepage/Home';
+import Books from '../src/components/Books/Books';
+import Blog from '../src/components/Blog/Blog';
+import About from '../src/components/About/About';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (

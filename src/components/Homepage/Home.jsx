@@ -1,15 +1,15 @@
 import React from 'react'
 import '../Homepage/Home.css'
 import { Link } from 'react-router-dom';
-import homeBook from '../../images/homeBook.jpg'
-import homeMAN from '../../images/homeMAN.jpg'
-import book1 from '../../images/book1.jpg'
-import book2 from '../../images/book2.jpg'
-import book3 from '../../images/book3.jpg'
-import book4 from '../../images/book4.jpg'
-import email from '../../images/email.png'
-import podcast from '../../images/podcast.png'
-import adobe from '../../images/adobe.png'
+import homeBook from '../../assets/images/homeBook.jpg'
+import homeMAN from '../../assets/images/homeMAN.jpg'
+import book1 from '../../assets/images/book1.jpg'
+import book2 from '../../assets/images/book2.jpg'
+import book3 from '../../assets/images/book3.jpg'
+import book4 from '../../assets/images/book4.jpg'
+import email from '../../assets/images/email.png'
+import podcast from '../../assets/images/podcast.png'
+import adobe from '../../assets/images/adobe.png'
 
 
 
@@ -114,21 +114,21 @@ const Home = () => {
                 <h1 className=' text-4xl font-bold py-10 text-center'>
                     Recent Posts
                 </h1>
-                <div className='grid grid-cols-3 px-28 gap-8 transition duration-150 ease-out hover:ease-in'>
-                    <div className=' relative transition duration-150 ease-out hover:ease-in'>
-                        <img src={email} alt="" className='transition duration-150 ease-out hover:ease-in' />
-                        <div className=' w-full absolute top-0 left-0 text-center pt-24'>
-                            <h1 className='text-2xl font-bold'>
-                                Configuring Scan To Email
-                            </h1>
-                            <p className=' text-center font-thin py-6 '>
-                                Feb 11, 2024
-                            </p>
-                            <Link to="/books" className=" transition duration-500 ease-in-out px-5 py-1 text-white bg-black hover:bg-black hover:text-orange-600 rounded-xl border border-black hover:border-orange-600">
-                                Read More
-                            </Link>
-                        </div>
-                    </div>
+                <div className='grid grid-cols-3 px-28 gap-8 '>
+                <div className='relative overflow-hidden w-full scale-100 hover:scale-110 '>
+            <img src={email} alt="Configuring Scan To Email" className='w-full scale-110 hover:scale-100' />
+            <div className='w-full absolute top-0 left-0 text-center pt-24'>
+                <h1 className='text-2xl font-bold'>
+                    Configuring Scan To Email
+                </h1>
+                <p className='text-center font-thin py-6'>
+                    Feb 11, 2024
+                </p>
+                <Link to="/books" className="transition duration-500 ease-in-out px-5 py-1 text-white bg-black hover:bg-black hover:text-orange-600 rounded-xl border border-black hover:border-orange-600">
+                    Read More
+                </Link>
+            </div>
+        </div>
                     <div className=' relative'>
                         <img src={podcast} alt="" />
                         <div className=' w-full absolute top-0 left-0 text-center pt-24'>
